@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <title>Contact[s] - The Beautiful Address Book for iPhone and iPod touch</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="shortcut icon" href="http://www.studioamanga.com/img/favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" href="../img/touch-icon-iphone4.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/touch-icon-ipad.png" />
+        <meta name="description" content="Studio AMANgA is an independant website/app producer." />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="apple-itunes-app" content="app-id=579440241">
+        <script type="text/javascript">
+/* <![CDATA[ */
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-18279263-1']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+/* ]]> */
+        </script>
+        <script type="text/javascript">
+/* <![CDATA[ */
+        currentScreenshotIndex = 1;
+        previousScreenshot = null;
+        setInterval(alternateScreenshots, 5000);
+
+        function alternateScreenshots()
+        {
+            newScreenshot = document.getElementById('screen'+currentScreenshotIndex);
+            if (previousScreenshot)
+                previousScreenshot.style.opacity = '0';
+            newScreenshot.style.opacity = '1';
+            previousScreenshot = newScreenshot;
+            currentScreenshotIndex ++;
+            if (currentScreenshotIndex > 4) 
+                currentScreenshotIndex = 1;
+        }
+/* ]]> */
+        </script>
+    </head>
+    <body>
+        <header class="top">
+            <img src="img/icon-72.png" class="icon" alt="Icon" />
+            <h1>Contact[s]</h1>
+        </header>
+        <section id="main">
+            <section id="screenshots">
+                <img src="img/iphone-5.png" alt="iPhone" id="screen0" />
+                <img src="img/screen-4-ip5.png" alt="Details Screenshot" id="screen4" />
+                <img src="img/screen-3-ip5.png" alt="Tweet Screenshot" id="screen3" />
+                <img src="img/screen-2-ip5.png" alt="Contacts Screenshot" id="screen2" />
+                <img src="img/screen-1-ip5.png" alt="Favorites Screenshot" id="screen1" />
+            </section>
+            <section id="features">
+                <header class="insert">
+                    <img src="img/icon-72.png" class="icon" alt="Icon" />
+                    <h1>Contact[s]</h1>
+                </header>
+                <h2>Designed for the people you love.</h2>
+                <p>
+                    Quickly send phone calls, text messages, emails, and tweets.<br/>
+                    It’s <em>that</em> simple. 
+                </p>
+                <p>
+                    Your contacts are always synchronized, you don’t have to worry about it.
+                </p>
+                <p>
+                    You can also use custom mail clients, like Sparrow and Gmail.
+                </p>
+                <a href="">
+                    <img src="img/download-appstore-225.png" alt="Download"/>
+                </a>
+            </section>
+        </section>
+        <footer>
+            <a href="http://www.studioamanga.com"><img src="img/amgmini.png" alt="StdAMG" /></a>
+            <p>
+                “Contact[s]” for iPhone and iPod touch<br />
+                by&nbsp;<a href="http://www.studioamanga.com">Studio&nbsp;AMANgA</a> - 2011/2013
+            </p>
+        </footer>
+    </body>
+</html>
