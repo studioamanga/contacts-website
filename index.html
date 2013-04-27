@@ -1,99 +1,132 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-        <title>Contact[s] - The Beautiful Address Book for iPhone and iPod touch</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="shortcut icon" href="http://www.studioamanga.com/img/favicon.ico" />
-        <link rel="apple-touch-icon-precomposed" href="../img/touch-icon-iphone4.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/touch-icon-ipad.png" />
-        <meta name="description" content="Studio AMANgA is an independant website/app producer." />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="apple-itunes-app" content="app-id=579440241">
-        <script type="text/javascript">
-/* <![CDATA[ */
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-18279263-1']);
-          _gaq.push(['_trackPageview']);
-        
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-/* ]]> */
-        </script>
-        <script type="text/javascript">
-/* <![CDATA[ */
+  <head>
+    <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
+    <title>Contact[s] - The Beautiful Address Book for iPhone and iPod touch</title>
+    <link href='style.css' rel='stylesheet' type='text/css' />
+    <link href='http://www.studioamanga.com/img/favicon.ico' rel='shortcut icon' />
+    <link href='../img/touch-icon-iphone4.png' rel='apple-touch-icon-precomposed' />
+    <link href='../img/touch-icon-ipad.png' rel='apple-touch-icon-precomposed' sizes='72x72' />
+    <meta content='Studio AMANgA is an independant website/app producer.' name='description' />
+    <meta content='width=device-width' name='viewport' />
+    <meta content='app-id=579440241' name='apple-itunes-app' />
+    <script type='text/javascript'>
+      //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18279263-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
         currentScreenshotIndex = 1;
         previousScreenshot = null;
         setInterval(alternateScreenshots, 5000);
-
+        
         function alternateScreenshots()
         {
-            newScreenshot = document.getElementById('screen'+currentScreenshotIndex);
-            if (previousScreenshot)
-                previousScreenshot.style.opacity = '0';
-            newScreenshot.style.opacity = '1';
-            previousScreenshot = newScreenshot;
-            currentScreenshotIndex ++;
-            if (currentScreenshotIndex > 4) 
-                currentScreenshotIndex = 1;
+          newScreenshot = document.getElementById('screen'+currentScreenshotIndex);
+          if (previousScreenshot)
+            previousScreenshot.style.opacity = '0';
+          newScreenshot.style.opacity = '1';
+          previousScreenshot = newScreenshot;
+          currentScreenshotIndex ++;
+          if (currentScreenshotIndex > 4) 
+            currentScreenshotIndex = 1;
         }
-/* ]]> */
-        </script>
-    </head>
-    <body>
-        <header class="general">
-            <nav>
-                <ul>
-                    <li><a href="../"><img src="img/amgmini-white.png" alt="StdAMG" /><span>Studio AMANgA</span></a></li>
-                    <li><a href="."><span>News</span></a></li>
-                    <li><a href="."><img src="img/icon-72.png" alt="StdAMG" /><span>Contact[s]</span></a></li>
-                    <li><a href="."><img src="img/icon-onelist.png" alt="StdAMG" /><span>1List</span></a></li>
-                    <li><a href="."><img src="img/icon-wizbox.png" alt="StdAMG" /><span>WizBox</span></a></li>
-                </ul>
-            </nav>
+      //]]>
+    </script>
+  </head>
+  <body>
+    <header class='general'>
+      <nav>
+        <ul>
+          <li>
+            <a href='http://www.studioamanga.com/'>
+              <img alt='StdAMG' src='img/amgmini-white.png' />
+              <span>Studio AMANgA</span>
+            </a>
+          </li>
+          <li>
+            <a href='http://www.studioamanga.com/news.html'>
+              <img alt='Feed' src='img/icon-feed.png' />
+              <span>News</span>
+            </a>
+          </li>
+          <li>
+            <a href='http://www.studioamanga.com/contacts/'>
+              <img alt='Contacts' src='img/icon-72.png' />
+              <span>Contact[s]</span>
+            </a>
+          </li>
+          <li>
+            <a href='http://www.studioamanga.com/onelist/'>
+              <img alt='1List' src='img/icon-onelist.png' />
+              <span>1List</span>
+            </a>
+          </li>
+          <li>
+            <a href='http://www.studioamanga.com/wizbox/'>
+              <img alt='WizBox' src='img/icon-wizbox.png' />
+              <span>WizBox</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <header class='top'>
+      <img alt='Icon' class='icon' src='img/icon-72.png' />
+      <h1>Contact[s]</h1>
+    </header>
+    <section id='main'>
+      <section id='screenshots'>
+        <img alt='iPhone' id='screen0' src='img/iphone-5.png' />
+        <img alt='Details Screenshot' id='screen4' src='img/screen-4-ip5.png' />
+        <img alt='Tweet Screenshot' id='screen3' src='img/screen-3-ip5.png' />
+        <img alt='Contacts Screenshot' id='screen2' src='img/screen-2-ip5.png' />
+        <img alt='Favorites Screenshot' id='screen1' src='img/screen-1-ip5.png' />
+      </section>
+      <section id='features'>
+        <header class='insert'>
+          <img alt='Icon' class='icon' src='img/icon-72.png' />
+          <h1>Contact[s]</h1>
         </header>
-        <header class="top">
-            <img src="img/icon-72.png" class="icon" alt="Icon" />
-            <h1>Contact[s]</h1>
-        </header>
-        <section id="main">
-            <section id="screenshots">
-                <img src="img/iphone-5.png" alt="iPhone" id="screen0" />
-                <img src="img/screen-4-ip5.png" alt="Details Screenshot" id="screen4" />
-                <img src="img/screen-3-ip5.png" alt="Tweet Screenshot" id="screen3" />
-                <img src="img/screen-2-ip5.png" alt="Contacts Screenshot" id="screen2" />
-                <img src="img/screen-1-ip5.png" alt="Favorites Screenshot" id="screen1" />
-            </section>
-            <section id="features">
-                <header class="insert">
-                    <img src="img/icon-72.png" class="icon" alt="Icon" />
-                    <h1>Contact[s]</h1>
-                </header>
-                <h2>Designed for the people you love.</h2>
-                <p>
-                    Quickly send phone calls, text messages, emails, and tweets.<br/>
-                    It’s <em>that</em> simple. 
-                </p>
-                <p>
-                    Your contacts are always synchronized, you don’t have to worry about it.
-                </p>
-                <p>
-                    You can also use custom mail clients, like Sparrow and Gmail.
-                </p>
-                <a href="">
-                    <img src="img/download-appstore-225.png" alt="Download"/>
-                </a>
-            </section>
-        </section>
-        <footer>
-            <a href="http://www.studioamanga.com"><img src="img/amgmini-black.png" alt="StdAMG" /></a>
-            <p>
-                “Contact[s]” for iPhone and iPod touch<br />
-                by&nbsp;<a href="http://www.studioamanga.com">Studio&nbsp;AMANgA</a> - 2011/2013
-            </p>
-        </footer>
-    </body>
+        <h2>Designed for the people you love.</h2>
+        <p>
+          Quickly send phone calls, text messages, emails, and tweets.
+          <br />
+          It’s
+          <em>that</em>
+          simple.
+        </p>
+        <p>
+          Your contacts are always synchronized, you don’t have to worry about it.
+        </p>
+        <p>
+          You can also use custom mail clients, like Sparrow and Gmail.
+        </p>
+        <a href=''>
+          <img alt='Download' src='img/download-appstore-225.png' />
+        </a>
+      </section>
+    </section>
+    <footer>
+      <a href='http://www.studioamanga.com'>
+        <img alt='StdAMG' src='img/amgmini-black.png' />
+      </a>
+      <p>
+        “Contact[s]” for iPhone and iPod touch - Designed by
+        <a href='http://www.studioamanga.com'>Studio AMANgA</a>
+        - 2011/2013
+        <br />
+        Images: healingdream, photostock, graur razvan ionut, nuchylee, graur codrin /
+        <a href='http://www.freedigitalphotos.net/'>FreeDigitalPhotos.net</a>
+      </p>
+    </footer>
+  </body>
 </html>

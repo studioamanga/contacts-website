@@ -46,6 +46,7 @@ header {
     color: white;
     margin-top: 0;
     padding-top: 0;
+    font-size: 0.9em;
 
     ul {
       margin: 0;
@@ -56,7 +57,7 @@ header {
 
         a {
           display: block;
-          padding: 6px 15px 6px 15px;
+          padding: 6px 17px 6px 17px;
           color: white;
           text-decoration: none;
           vertical-align: top;
@@ -68,10 +69,10 @@ header {
           }
           span {
             position: relative;
-            top: 2px;
+            top: 3px;
           }
           img {
-            margin-right: 8px;
+            margin-right: 4px;
           }
 
           &:HOVER {
