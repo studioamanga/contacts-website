@@ -1,2 +1,2 @@
 sass style.scss:style.css
-haml index.html.haml index.html
+haml -f html5 index.html.haml index.html
