@@ -121,6 +121,12 @@ section#features a {
   top: 30px;
   display: block;
   text-align: center; }
+section#features .alticon {
+  width: 50px;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 11px;
+  margin-right: 8px; }
 
 footer {
   margin-top: 40px;
