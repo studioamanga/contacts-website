@@ -195,7 +195,7 @@ footer {
     section#features h2 {
       text-align: left; }
     section#features a {
-      top: 20px;
+      top: 10px;
       left: 0px;
       text-align: left; }
 
@@ -204,7 +204,11 @@ footer {
     text-align: center; }
 
   footer > * {
-    text-align: left; } }
+    text-align: left; }
+
+  footer > a {
+    position: relative;
+    top: 7px; } }
 @media all and (min-width: 800px) and (max-width: 950px) {
   section#main {
     margin-top: 20px;

@@ -276,7 +276,7 @@ footer {
       text-align: left;
     }
     a {
-      top: 20px;
+      top: 10px;
       left: 0px;
       text-align: left;
     }
@@ -288,6 +288,10 @@ footer {
   }
   footer > * {
     text-align: left;
+  }
+  footer > a {
+    position: relative;
+    top: 7px;
   }
 }
 
