@@ -1,5 +1,5 @@
 
-$blue: #ddd;
+$blue: #45ABD5;
 $light-blue: #9CC0EA;
 $dark-blue: #488ad8;
 
@@ -28,13 +28,14 @@ header {
   
   .icon {
     height: 72px;
+    border-radius: 16px;
     padding-left: 26px;
   }
   
   h1 {
     padding-left: 10px;
     position: relative;
-    top: 5px;
+    top: 13px;
     font-size: 2.4em;
   }
   
@@ -94,7 +95,7 @@ section#main {
   margin-top: 100px;
   margin-bottom: 0px;
   background-color: $blue;
-  color: black;
+  color: white;
 }
 
 section#screenshots,
@@ -140,6 +141,10 @@ section#features {
     margin-bottom: 30px;
     line-height: 1.3em;
   }
+
+  p {
+    margin-bottom: 25px;
+  }
   
   ul {
     margin-bottom: 30px;
@@ -177,8 +182,6 @@ section#features {
 
   .alticon {
     width: 50px; 
-    background-color: black;
-    border: 1px solid black; 
     border-radius: 13px; 
     margin-right: 8px;
   }
@@ -222,7 +225,7 @@ footer {
   }
   header.insert {
     display: block;
-    color: black;
+    color: white;
     text-align: left;
         
     .icon {
@@ -231,7 +234,7 @@ footer {
     h1 {
       position: relative;
       font-size: 3em;
-      top: 23px;
+      top: 25px;
     }
   }
 
