@@ -2,14 +2,14 @@
 %html
   %head
     %meta{:content => "text/html;charset=utf-8", "http-equiv" => "Content-Type"}/
-    %title Contact[s] - The Beautiful Address Book for iPhone and iPod touch
-    %link{:href => "style.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "http://www.studioamanga.com/img/favicon.ico", :rel => "shortcut icon"}/
-    %link{:href => "../img/touch-icon-iphone4.png", :rel => "apple-touch-icon-precomposed"}/
-    %link{:href => "../img/touch-icon-ipad.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
-    %meta{:content => "Studio AMANgA is an independant website/app producer.", :name => "description"}/
-    %meta{:content => "width=device-width", :name => "viewport"}/
-    %meta{:content => "app-id=639507613", :name => "apple-itunes-app"}/
+    %title Contact[s] - The Beautiful Address Book for iPad, iPhone, and iPod touch
+    %link{:rel => "stylesheet",    :href => "style.css", :type => "text/css"}/
+    %link{:rel => "shortcut icon", :href => "http://www.studioamanga.com/img/favicon.ico"}/
+    %link{:rel => "apple-touch-icon-precomposed", :href => "../img/touch-icon-iphone4.png"}/
+    %link{:rel => "apple-touch-icon-precomposed", :href => "../img/touch-icon-ipad.png", :sizes => "72x72"}/
+    %meta{:name => "description",      :content => "Contact[s], for the people you love."}/
+    %meta{:name => "viewport",         :content => "width=device-width"}/
+    %meta{:name => "apple-itunes-app", :content => "app-id=639507613"}/
     :javascript
       currentScreenshotIndex = 1;
       previousScreenshot = null;
@@ -63,15 +63,23 @@
         %header.insert
           %img.icon{:alt => "Icon", :src => "img/icon-72.png"}/
           %h1 Contact[s]
-        %h2 Designed for the people you love.
+        %h2 For the people you love.
         %p
           Quickly send phone calls, text messages, emails, and tweets.
           %br
           It’s
           %em that
           simple.
+        %p 
+          Make it 
+          %em yours.
+          You can customize the app with gorgeous colors and themes.
         %p
           Your contacts are always synchronized, you don’t have to worry about it.
+          %span.details
+            The app is directly connected to your iPhone or iPad address book. 
+            %br
+            It works with iCloud Contacts, Google Contacts, Yahoo Contacts, and any LDAP or CardDAV account.
         %p
           You can also use custom mail clients, like Sparrow and Gmail.
         %p
@@ -85,7 +93,7 @@
       %a{:href => "http://www.studioamanga.com"}
         %img{:alt => "StdAMG", :src => "img/amgmini-black.png"}/
       %p
-        “Contact[s]” for iPad, iPhone, and iPod touch / Designed by Studio AMANgA / 2011-2014
+        “Contact[s]” for iPad, iPhone, and iPod touch, designed by Studio AMANgA 2011-2014
         %br
         %a{:href => "contacts-presskit.zip"} Download the Press Kit
         %br

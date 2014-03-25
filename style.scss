@@ -145,6 +145,13 @@ section#features {
 
   p {
     margin-bottom: 25px;
+    max-width: 550px;
+
+    .details {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.85em;
+    }
   }
   
   ul {
@@ -220,7 +227,7 @@ footer {
   } 
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 840px) {
   header.top {
     display: none;
   }
@@ -275,7 +282,7 @@ footer {
   
   section#features {
     padding-left: 20px;
-    top: 60px;
+    top: 4px;
     
     h2 {
       text-align: left;
@@ -300,7 +307,7 @@ footer {
   }
 }
 
-@media all and (min-width: 800px) and (max-width: 950px) {
+@media all and (min-width: 840px) and (max-width: 980px) {
   section#main {
     margin-top: 20px;
     margin-bottom: 0px;
@@ -316,7 +323,7 @@ footer {
   }
   
   section#features {
-    top: 55px;
+    top: 4px;
   }
   
 }
