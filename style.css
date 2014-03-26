@@ -8,8 +8,7 @@ header {
   margin-bottom: 20px;
   padding-right: 20px;
   text-align: center;
-  color: black;
-  text-rendering: optimizeLegibility; }
+  color: black; }
   header .icon,
   header h1 {
     display: inline-block;
