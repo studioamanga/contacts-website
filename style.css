@@ -159,7 +159,8 @@ footer {
     color: #888;
     text-decoration: none; }
     footer a img {
-      opacity: 0.35; }
+      opacity: 0.35;
+      width: 50px; }
     footer a:HOVER {
       color: #444; }
       footer a:HOVER img {
