@@ -96,6 +96,10 @@ section.msg {
 section.msg a {
   color: #45abd5; }
 
+.download img {
+  width: 225px;
+  height: 66px; }
+
 section#features h2 {
   font-weight: normal;
   text-align: center;
