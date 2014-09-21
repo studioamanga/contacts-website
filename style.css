@@ -203,7 +203,7 @@ footer {
     display: inline-block;
     position: relative;
     top: -95px;
-    height: 648px;
+    height: 788px;
     vertical-align: middle;
     padding: 0px;
     text-align: left; }
@@ -243,4 +243,8 @@ footer {
     top: 56px;
     width: 250px; }
     section#screenshots img {
-      width: 250px; } }
+      width: 250px; }
+
+  section#screenshots,
+  section#features {
+    height: 738px; } }

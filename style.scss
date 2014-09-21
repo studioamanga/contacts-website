@@ -1,7 +1,7 @@
 
-$blue: #45ABD5;
+$blue:       #45ABD5;
 $light-blue: #9CC0EA;
-$dark-blue: #488ad8;
+$dark-blue:  #488ad8;
 
 body {
   font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -289,7 +289,7 @@ footer {
     display: inline-block;
     position: relative;
     top: -95px;
-    height: 560 + 88px;
+    height: 700 + 88px;
     vertical-align: middle;
     padding: 0px;
     text-align: left;
@@ -344,5 +344,10 @@ footer {
     img {
       width: 250px;
     }
+  }
+
+  section#screenshots,
+  section#features {
+    height: 650 + 88px;
   }
 }
