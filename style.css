@@ -63,7 +63,7 @@ section#main {
   position: relative;
   margin-top: 100px;
   margin-bottom: 0px;
-  background-color: #45abd5;
+  background-color: #45ABD5;
   color: white; }
 
 section#screenshots,
@@ -94,7 +94,7 @@ section.msg {
   line-height: 1.3em; }
 
 section.msg a {
-  color: #45abd5; }
+  color: #45ABD5; }
 
 .download img {
   width: 225px;
@@ -248,3 +248,5 @@ footer {
   section#screenshots,
   section#features {
     height: 738px; } }
+
+/*# sourceMappingURL=style.css.map */
