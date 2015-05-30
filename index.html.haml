@@ -1,122 +1,96 @@
 !!!
-%html
+%html{:lang => "en"}
   %head
-    %meta{:content => "text/html;charset=utf-8", "http-equiv" => "Content-Type"}/
-    %title Contact[s] - The Beautiful Address Book for iPad, iPhone, and iPod touch
-    %link{:rel => "stylesheet",    :href => "style.css?valW", :type => "text/css"}/
-    %link{:rel => "shortcut icon", :href => "http://www.studioamanga.com/img/favicon.ico"}/
-    %link{:rel => "apple-touch-icon-precomposed", :href => "../img/touch-icon-iphone4.png"}/
-    %link{:rel => "apple-touch-icon-precomposed", :href => "../img/touch-icon-ipad.png", :sizes => "72x72"}/
-    %meta{:name => "description",      :content => "Contact[s], for the people you love."}/
-    %meta{:name => "viewport",         :content => "width=device-width"}/
-    %meta{:name => "apple-itunes-app", :content => "app-id=639507613"}/
-    :javascript
-      currentScreenshotIndex = 1;
-      previousScreenshot = null;
-      setInterval(alternateScreenshots, 5000);
-      
-      function alternateScreenshots()
-      {
-        newScreenshot = document.getElementById('screen'+currentScreenshotIndex);
-        if (previousScreenshot)
-          previousScreenshot.style.opacity = '0';
-        newScreenshot.style.opacity = '1';
-        previousScreenshot = newScreenshot;
-        currentScreenshotIndex ++;
-        if (currentScreenshotIndex > 3) 
-          currentScreenshotIndex = 1;
-      }
+    %meta{:charset => "utf-8"}
+    %title Contact[s] for iPhone and iPad
+    %link{:rel => "stylesheet",    :href => "style.css?re", :type => "text/css"}
+    %link{:rel => "shortcut icon", :href => "http://www.studioamanga.com/img/favicon.ico"}
+    %link{:rel => "apple-touch-icon-precomposed", :href => "../img/touch-icon-iphone4.png"}
+    %link{:rel => "apple-touch-icon-precomposed", :href => "../img/touch-icon-ipad.png", :sizes => "72x72"}
+    %meta{:name => "description",      :content => "Contact[s], the Beautiful Address Book for iPad, iPhone, and iPod touch"}
+    %meta{:name => "viewport",         :content => "width=device-width"}
+    %meta{:name => "apple-itunes-app", :content => "app-id=639507613"}
   %body
-    %header.general
-      %nav
-        %ul
-          %li
-            %a{:href => "http://www.studioamanga.com/"}
-              %img{:alt => "StdAMG", :src => "img/icon-amg.png?val"}/
-              %span Studio AMANgA
-          %li
-            %a{:href => "http://www.studioamanga.com/comicbookday/"}
-              %img{:alt => "Comic Book Day", :src => "img/icon-comicbookday.png?val"}/
-              %span Comic Book Day
-          %li
-            %a{:href => "http://www.studioamanga.com/onelist/"}
-              %img{:alt => "1List", :src => "img/icon-onelist.png?val"}/
-              %span 1List
-          %li
-            %a{:href => "http://www.studioamanga.com/wizbox/"}
-              %img{:alt => "WizBox", :src => "img/icon-wizbox.png?val"}/
-              %span WizBox
-          %li
-            %a{:href => "http://www.studioamanga.com/gameskeeper/"}
-              %img{:alt => "Games Keeper", :src => "img/icon-gameskeeper.png?val"}/
-              %span Games Keeper
-    %header.top
-      %img.icon{:alt => "Icon", :src => "img/icon-72-2x.png"}/
-      %h1 Contact[s]
-    %section#main
-      %section#screenshots
-        %img#screen0{:alt => "iPhone", :src => "img/iphone-5.png"}/
-        %img#screen3{:alt => "Contact Screenshot", :src => "img/screen-3-ip5.png"}/
-        %img#screen2{:alt => "Tweet Screenshot", :src => "img/screen-2-ip5.png"}/
-        %img#screen1{:alt => "Favorites Screenshot", :src => "img/screen-1-ip5.png"}/
-      %section#features
-        %header.insert
-          %img.icon{:alt => "Icon", :src => "img/icon-72-2x.png"}/
-          %h1 Contact[s]
-        %h2 For the people you love.
-        %p
-          Quickly send phone calls, text messages, emails, and tweets.
-          %br
-          It’s
-          %em that
-          simple.
-        %p 
-          Make it 
-          %em yours.
-          You can customize the app with gorgeous colors and themes.
-        %ul.colors
-          %li.color{:style => "background-color: white;"}  
-          %li.color{:style => "background-color: rgb(255, 56, 56);"}  
-          %li.color{:style => "background-color: rgb(255, 148, 53);"}  
-          %li.color{:style => "background-color: rgb(255, 201, 71);"}  
-          %li.color{:style => "background-color: rgb(69, 217, 117);"}  
-          %li.color{:style => "background-color: rgb(46, 171, 214);"}  
-          %li.color{:style => "background-color: rgb(0, 125, 245);"}  
-          %li.color{:style => "background-color: rgb(89, 89, 207);"}  
-        %p
-          Your contacts are always synchronized, you don’t have to worry about it.
-          %span.details
-            The app is directly connected to your iPhone or iPad address book. 
-            %br
-            It works with iCloud Contacts, Google Contacts, Yahoo Contacts, and any LDAP or CardDAV account.
-        %p
-          There’s now a special Birthdays Widget for your Today view in Notification Center (iOS 8).
+    %nav.general
+      %ul
+        %li
+          %a{:href => "http://www.studioamanga.com/"}
+            %img{:alt => "StdAMG", :src => "img/icon-amg.png"}
+            %span Studio AMANgA
+        %li
+          %a{:href => "http://www.studioamanga.com/comicbookday/"}
+            %img{:alt => "Comic Book Day", :src => "img/icon-comicbookday.png"}
+            %span Comic Book Day
+        %li
+          %a{:href => "http://www.studioamanga.com/onelist/"}
+            %img{:alt => "1List", :src => "img/icon-onelist.png"}
+            %span 1List
+        %li
+          %a{:href => "http://www.studioamanga.com/gameskeeper/"}
+            %img{:alt => "Games Keeper", :src => "img/icon-gameskeeper.png"}
+            %span Games Keeper
 
-        %p
-          You can also use custom mail clients, like Gmail, Dispatch, or Sparrow.
+    %header.top.cropped-bottom
+      %div.title
+        %img.icon{:alt => "Icon", :src => "img/icon-72-2x.png"}
+        %h1 Contact[s]
+      %div
+        %img.showcase{:alt => "Screens", :src => "img/screens.png"}
+
+    %section.main
+      %div.tagline
+        For the people you love.
+
+      %div.feature
+        %h3 Simple
+        %img{:src => "img/icon-star.png", :alt => "Star"}
+        %p Quickly send phone calls, text messages, emails, and tweets. 
+      %div.feature
+        %h3 Beautiful
+        %img{:src => "img/icon-star.png", :alt => "Star"}
+        %p Make it yours. You can customize the app with gorgeous colors and themes.
+        %ul.colors
+          %li.color{:style => "background-color: white;"} 
+          %li.color{:style => "background-color: rgb(255, 56, 56);"} 
+          %li.color{:style => "background-color: rgb(255, 148, 53);"} 
+          %li.color{:style => "background-color: rgb(255, 201, 71);"} 
+          %li.color{:style => "background-color: rgb(69, 217, 117);"} 
+          %li.color{:style => "background-color: rgb(46, 171, 214);"} 
+          %li.color{:style => "background-color: rgb(0, 125, 245);"} 
+          %li.color{:style => "background-color: rgb(89, 89, 207);"} 
+
+      %div.feature
+        %h3 In Sync
+        %img{:src => "img/icon-star.png", :alt => "Star"}
+        %p 
+          Your contacts are always synchronized, you don’t have to worry about it.
+        %p{:style => "font-size: 0.9em;"}
+          The app is directly connected to your iPhone or iPad address book. It works with iCloud Contacts, Google Contacts, Yahoo Contacts, and any LDAP or CardDAV account.
+      %div.feature
+        %h3 Custom Mail Clients
+        %img{:src => "img/icon-star.png", :alt => "Star"}
+        %p You can also use custom mail clients, like Gmail, Dispatch, or Sparrow.
         %p.alticons
-          %img.alticon{:alt => "Mail",     :src => "img/icon-mail.png?val"}/
-          %img.alticon{:alt => "Gmail",    :src => "img/icon-gmail.png?val"}/
-          %img.alticon{:alt => "Dispatch", :src => "img/icon-dispatch.png?val"}/
-          %img.alticon{:alt => "Sparrow",  :src => "img/icon-sparrow.png?val"}/
-        %p.download
-          %a{:href => "https://itunes.apple.com/app/contact-s-2/id639507613?mt=8"}
-            %img{:alt => "Download", :src => "img/download-appstore.svg"}/
+          %img.alticon{:alt => "Mail",     :src => "img/icon-mail.png"}
+          %img.alticon{:alt => "Gmail",    :src => "img/icon-gmail.png"}
+          %img.alticon{:alt => "Dispatch", :src => "img/icon-dispatch.png"}
+          %img.alticon{:alt => "Sparrow",  :src => "img/icon-sparrow.png"}
+
+      %p.download
+        %a{:href => "https://itunes.apple.com/app/contact-s-2/id639507613?mt=8"}
+          %img{:alt => "Download on the App Store", :src => "img/download-appstore.svg"}/
+
     %footer
       %a{:href => "http://www.studioamanga.com"}
-        %img{:alt => "StdAMG", :src => "img/amgmini-black.png?val"}/
+        %img{:alt => "StdAMG", :src => "img/amgmini-black.png"}/
       %p
-        “Contact[s]” for iPad, iPhone, and iPod touch, designed by Studio AMANgA 2011-2014
+        “Contact[s]” for iPhone, iPad, and iPod touch
         %br
         %a{:href => "releasenotes"} Release Notes
         \/
-        %a{:href => "contacts-presskit.zip"} Press Kit
+        %a{:href => "contacts-presskit.zip"} PressKit
         %br
-        Powered by 
-        %a{:href => "https://github.com/heardrwt/RHAddressBook"} RHAddressBook
-        %br
-        Images: healingdream, photostock, graur razvan ionut, nuchylee, graur codrin /
-        %a{:href => "http://www.freedigitalphotos.net/"} FreeDigitalPhotos.net
+        Made by Studio AMANgA 2011-2015
     
     :javascript
       var _gaq = _gaq || [];
