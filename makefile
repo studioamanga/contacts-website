@@ -1,9 +1,7 @@
 all:
 	haml -f html5 index.html.haml index.html
 	sass style.scss:style.css
-	cd ../../../Projects/iOS/contacts/
-	git pull
-	cd ../../../Web/amg/contacts/
+	git -C ../../../Projects/iOS/contacts/ pull
 	cp ../../../Projects/iOS/contacts/releasenotes.html .
 	open .
 	open /Applications/Cyberduck.app
