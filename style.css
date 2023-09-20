@@ -170,12 +170,16 @@ ul.colors {
 .alticons {
   margin-top: -10px; }
   .alticons .alticon {
-    width: 42px  !important;
-    height: 42px  !important;
+    width: 42px !important;
+    height: 42px !important;
     border-radius: 10px;
     margin-right: 6px;
     position: relative !important;
     top: inherit;
     left: inherit; }
+
+section.main .feature img.alticon {
+  -webkit-filter: none !important;
+  filter: none !important; }
 
 /*# sourceMappingURL=style.css.map */
