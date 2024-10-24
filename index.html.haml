@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "utf-8"}
     %title Contact[s] for iPhone, iPad, and Mac
-    %link{:rel => "stylesheet", :href => "style.css?inv", :type => "text/css"}
+    %link{:rel => "stylesheet", :href => "style.css?update2024", :type => "text/css"}
     %link{:rel => "canonical", :href => "https://www.studioamanga.com/contacts/"}
     %link{:rel => "shortcut icon", :href => "https://www.studioamanga.com/img/favicon.ico"}
     %meta{:name => "description", :content => "Contact[s], the Beautiful Address Book for iPhone, iPad, and Mac"}
@@ -11,13 +11,11 @@
     %meta{:name => "apple-itunes-app", :content => "app-id=639507613"}
   %body
     %nav.general
-      %ul
-        %li
-          %a{:href => "https://www.studioamanga.com/"}
-            %img{:alt => "StdAMG", :src => "img/icon-amg.png"}
-            %span Studio AMANgA
+      %a{:href => "https://www.studioamanga.com/"}
+        %img{:alt => "StdAMG", :src => "img/icon-amg.png"}
+        %span Studio AMANgA
 
-    %header.top.cropped-bottom
+    %header.top
       %div.title
         %img.icon{:alt => "Icon", :src => "img/icon-72-2x.png"}
         %h1 Contact[s]
@@ -25,20 +23,23 @@
         %img.showcase{:alt => "Screens", :src => "img/screens.png"}
 
     %section.main
-      %div.tagline
-        For the people you love.
+      %p.tagline
+        A very special address book, for the people you love.
 
-      %div.feature
-        %h3 Simple
-        %img{:src => "img/icon-star.png", :alt => "Star"}
-        %p Quickly make phone calls, send text messages and emails.
-      %div.feature
-        %h3 Beautiful
-        %img{:src => "img/icon-star.png", :alt => "Star"}
-        %p Make it yours. You can customize the app with gorgeous colors and themes.
+      %p.download
+        %a{:href => "https://itunes.apple.com/app/contact-s-2/id639507613?mt=8"}
+          %img{:alt => "Download on the App Store", :src => "img/download-appstore.svg"}/
+
+      %p
+        %strong Simple to use.
+        Quickly make phone calls, send text messages, and emails.
+      
+      %p
+        %strong Personnal.
+        You can customize the app with gorgeous colors and themes.
+
         %ul.colors
-          %li.color{:style => "background-color: white;"} 
-          %li.color{:style => "background-color: black;"} 
+          %li.color.black{:style => "background-color: black;"} 
           %li.color{:style => "background-color: rgb(255, 56, 56);"} 
           %li.color{:style => "background-color: rgb(255, 148, 53);"} 
           %li.color{:style => "background-color: rgb(255, 201, 71);"} 
@@ -47,30 +48,27 @@
           %li.color{:style => "background-color: rgb(0, 125, 245);"} 
           %li.color{:style => "background-color: rgb(89, 89, 207);"} 
 
-      %div.feature
-        %h3 In Sync
-        %img{:src => "img/icon-star.png", :alt => "Star"}
-        %p 
-          Your contacts are always synchronized, you don’t have to worry about it.
-        %p{:style => "font-size: 0.9em;"}
-          The app is directly connected to your iPhone or iPad address book. It works with iCloud Contacts, Google Contacts, Yahoo Contacts, and any LDAP or CardDAV account.
-      %div.feature
-        %h3 Custom Mail Clients
-        %img{:src => "img/icon-star.png", :alt => "Star"}
-        %p You can also use custom mail clients: Gmail, Microsoft Outlook, Yahoo Mail, Dispatch, Spark, Airmail, and Sparrow.
+      %p
+        %strong Connected.
+        The app is directly integrated with the system address book. It works with iCloud Contacts, Google Contacts, Yahoo Contacts, and any LDAP or CardDAV account. Your contacts are always synchronized.
+
+      %p
+        %strong Customizable.
+        You can use your own mail app: Gmail, Microsoft Outlook, Yahoo Mail, Airmail, Spark, Fastmail and Proton Mail.
+
         %p.alticons
           %img.alticon{:alt => "Mail", :src => "img/icon-mail.png"}
           %img.alticon{:alt => "Gmail", :src => "img/icon-gmail.png"}
           %img.alticon{:alt => "Outlook", :src => "img/icon-outlook.png"}
           %img.alticon{:alt => "Yahoo Mail", :src => "img/icon-yahoo.png"}
           %img.alticon{:alt => "Airmail", :src => "img/icon-airmail.png"}
-          %img.alticon{:alt => "Dispatch", :src => "img/icon-dispatch.png"}
           %img.alticon{:alt => "Spark", :src => "img/icon-spark.png"}
-          %img.alticon{:alt => "Sparrow", :src => "img/icon-sparrow.png"}
+          %img.alticon{:alt => "Fastmail", :src => "img/icon-fastmail.png"}
+          %img.alticon{:alt => "Proton Mail", :src => "img/icon-protonmail.png"}
 
-      %p.download
-        %a{:href => "https://itunes.apple.com/app/contact-s-2/id639507613?mt=8&at=1000lMiD"}
-          %img{:alt => "Download on the App Store", :src => "img/download-appstore.svg"}/
+      %p
+        %a{:href => "https://itunes.apple.com/app/contact-s-2/id639507613?mt=8"}
+          Download Contact[s] for free on the App Store and Mac App Store.
 
     %footer
       %a{:href => "https://www.studioamanga.com"}
@@ -78,10 +76,10 @@
       %p
         “Contact[s]” for iPhone, iPad, and Mac
         %br
+        Available in English and French / Disponible en anglais et français
+        %br
         %a{:href => "releasenotes"} Release Notes
         \/
         %a{:href => "privacy-policy"} Privacy Policy
-        \/
-        %a{:href => "contacts-presskit.zip"} PressKit
         %br
         Made by Studio AMANgA 2011–2024
